@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>케밋 랜딩 페이지</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif; }
+    body { color: #333; line-height: 1.6; background: #fff; }
+
+    .container { width: 90%; max-width: 1100px; margin: 0 auto; }
+    .section { padding: 80px 20px; text-align: center; }
+    h2 { font-size: 1.8rem; margin-bottom: 40px; font-weight: 700; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #fff;
+      padding: 120px 20px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2rem; margin-bottom: 15px; font-weight: 700; }
+    .hero p { font-size: 1.1rem; margin-bottom: 25px; }
+    .btn-primary {
+      background: #ff5a5f;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: #e64950; }
+
+    /* Reviews */
+    .reviews { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    .review-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      width: 280px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      flex: 1 1 250px;
+    }
+    .review-box span { font-size: 1.2rem; color: #f4b400; display: block; margin-bottom: 10px; }
+
+    /* Features */
+    .features { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+    .feature-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      flex: 1 1 250px;
+      font-size: 0.95rem;
+    }
+    .feature-box strong { display: block; margin-bottom: 10px; font-size: 1rem; }
+
+    /* Pricing */
+    .pricing { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    .price-box {
+      border: 2px solid #eee;
+      border-radius: 10px;
+      padding: 40px 20px;
+      width: 280px;
+      background: #fff;
+      flex: 1 1 250px;
+    }
+    .price-box h3 { margin-bottom: 15px; font-size: 1.2rem; }
+    .price-box p { margin: 8px 0; }
+    .price-box strong { font-size: 1.3rem; }
+    .price-box.highlight {
+      border-color: #ff5a5f;
+      color: #ff5a5f;
+      font-weight: bold;
+    }
+
+    /* FAQ */
+    .faq { text-align: left; max-width: 700px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid #ddd; padding: 20px 0; cursor: pointer; }
+    .faq-item h4 { font-size: 1rem; display: flex; justify-content: space-between; align-items: center; }
+    .faq-item p { display: none; margin-top: 10px; color: #555; font-size: 0.9rem; }
+
+    /* CTA */
+    .cta {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .cta h2 { margin-bottom: 20px; font-size: 1.6rem; font-weight: 700; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 1.5rem; }
+      .hero p { font-size: 1rem; }
+      h2 { font-size: 1.5rem; }
+      .section { padding: 60px 15px; }
+      .price-box { padding: 30px 15px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero { padding: 80px 15px; }
+      .hero h1 { font-size: 1.2rem; }
+      .hero p { font-size: 0.9rem; }
+      .btn-primary { padding: 12px 20px; font-size: 0.9rem; }
+      .review-box, .feature-box, .price-box { width: 100%; max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero -->
+  <section class="hero">
+    <h1>케밋과 함께 새로운 만남을 시작하세요</h1>
+    <p>당신의 성향에 꼭 맞는 사람을 지금 만나보세요</p>
+    <a href="#" class="btn-primary">무료로 시작하기</a>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section">
+    <h2>수많은 사람들이 케밋을 선택한 이유</h2>
+    <div class="reviews">
+      <div class="review-box"><span>★★★★★</span> "인생의 반쪽을 찾았어요!"</div>
+      <div class="review-box"><span>★★★★★</span> "안전하고 믿을 수 있어요"</div>
+      <div class="review-box"><span>★★★★★</span> "성향 맞춤 매칭이에요"</div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section">
+    <h2>핵심 기능</h2>
+    <div class="features">
+      <div class="feature-box"><strong>성향 기반 매칭</strong> 정밀 성향 분석으로 진짜 잘 맞는 사람과 연결</div>
+      <div class="feature-box"><strong>안전 인증 시스템</strong> 철저한 본인 인증과 데이터 암호화</div>
+      <div class="feature-box"><strong>실시간 추천</strong> 지금 당신과 가장 잘 맞는 사람을 바로 추천</div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section">
+    <h2>요금제</h2>
+    <div class="pricing">
+      <div class="price-box">
+        <h3>무료</h3>
+        <p><strong>₩0</strong></p>
+        <p>기본 매칭 제한</p>
+      </div>
+      <div class="price-box highlight">
+        <h3>프리미엄</h3>
+        <p><strong>₩9,900/월</strong></p>
+        <p>무제한 매칭 & 프리미엄 혜택</p>
+      </div>
+      <div class="price-box">
+        <h3>VIP</h3>
+        <p><strong>₩19,900/월</strong></p>
+        <p>1:1 컨설팅 & 맞춤 매칭 서비스</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <h2>자주 묻는 질문</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <h4>개인정보는 안전한가요?<span>+</span></h4>
+        <p>철저한 보안 시스템으로 안전하게 보호됩니다.</p>
+      </div>
+      <div class="faq-item">
+        <h4>무료로도 사용할 수 있나요?<span>+</span></h4>
+        <p>기본 매칭은 무료로 가능합니다.</p>
+      </div>
+      <div class="faq-item">
+        <h4>매칭 성공률은 얼마나 되나요?<span>+</span></h4>
+        <p>성향 기반 알고리즘으로 높은 성공률을 자랑합니다.</p>
+      </div>
+      <div class="faq-item">
+        <h4>환불 규정은 어떻게 되나요?<span>+</span></h4>
+        <p>구독 시작 7일 이내 환불 가능합니다.</p>
+      </div>
+      <div class="faq-item">
+        <h4>지인 차단은 어떻게 설정하나요?<span>+</span></h4>
+        <p>설정 메뉴에서 지인 차단 기능을 사용할 수 있습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>이제 당신의 새로운 만남을 시작할 시간입니다</h2>
+    <a href="#" class="btn-primary">지금 무료로 시작하기</a>
+  </section>
+
+  <script>
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const p = item.querySelector('p');
+        const sign = item.querySelector('span');
+        const isOpen = p.style.display === 'block';
+
+        document.querySelectorAll('.faq-item p').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.faq-item span').forEach(el => el.textContent = '+');
+
+        if (!isOpen) {
+          p.style.display = 'block';
+          sign.textContent = '-';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
